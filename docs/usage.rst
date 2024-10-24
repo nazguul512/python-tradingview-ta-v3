@@ -3,26 +3,23 @@ Usage
 
 .. note:: Please install or update TradingView_TA to the latest version. Please read the `getting started <overview.rst>`_ guide before continuing.
 
-.. warning:: TradingView_TA older than v3.2.0 is no longer supported. Please update using ``pip install tradingview_ta --upgrade``.
 
 Importing TradingView_TA
 ------------------------
 
 .. code-block:: python3
 
-    from tradingview_ta import TA_Handler, Interval, Exchange
-    import tradingview_ta
+    from tradingview_ta_v3 import TA_Handler, Interval, Exchange
+    import tradingview_ta_v3
 
 
 Checking the version
 --------------------
 
-Starting from version 3.1.3, you can retrieve the version of TradingView_TA through the ``__version__`` attribute.
-
 .. code-block:: python3
 
-    print(tradingview_ta.__version__)
-    # Example output: 3.1.3
+    print(tradingview_ta_v3.__version__)
+    # Example output: 1.0.0
 
 Instantiating TA_Handler
 ------------------------
@@ -43,7 +40,7 @@ Parameters:
 
         You can search on https://tvdb.brianthe.dev to see which symbol, exchange, and screener to use.
 
-        .. image:: https://raw.githubusercontent.com/brian-the-dev/python-tradingview-ta/main/images/tv-list.png
+        .. image:: https://raw.githubusercontent.com/nazguul512/python-tradingview-ta-v3/main/images/tv-list.png
 
     * symbol (``str``) – Ticker symbol (e.g., ``"AAPL"``, ``"TLKM"``, ``"USDEUR"``, ``"BTCUSDT"``).
     * exchange (``str``) – Exchange (e.g., ``"nasdaq"``, ``"idx"``, ``Exchange.FOREX``, ``"binance"``).
@@ -139,7 +136,7 @@ Retrieving multiple analysis
 
 .. code-block:: python3
 
-    from tradingview_ta import *
+    from tradingview_ta_v3 import *
     analysis = get_multiple_analysis(screener="america", interval=Interval.INTERVAL_1_HOUR, symbols=["nasdaq:tsla", "nyse:docn", "nasdaq:aapl"])
 
 .. note::
@@ -197,7 +194,7 @@ Search for symbols using the TradingView symbol search API. Returns a list of sy
 
 .. code-block:: python3
 
-    from tradingview_ta import TradingView
+    from tradingview_ta_v3 import TradingView
     print(TradingView.search("tesla", "america"))
     # Output: [{'symbol': 'TSLA', 'exchange': 'NASDAQ', 'type': 'stock', 'description': 'Tesla, Inc.', 'logo': 'https://s3-symbol-logo.tradingview.com/tesla.svg'}, ...]
 
@@ -216,7 +213,7 @@ Simply add the ``proxies`` parameter if you wish to utilize a proxy. Works with 
 
     .. code-block:: python3
 
-        from tradingview_ta import TA_Handler, Interval, Exchange
+        from tradingview_ta_v3 import TA_Handler, Interval, Exchange
         tesla = TA_Handler(
             symbol="TSLA",
             screener="america",

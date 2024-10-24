@@ -22,4 +22,4 @@ If applicable, attach your code or add screenshots to help explain your problem.
 **Version**
  - OS: [e.g. Ubuntu 21.04, Windows 10]
  - Python: [e.g. 3.8.6]
- - TradingView-TA: [e.g. 3.2.4]
+ - TradingView-TA-V3: [e.g. 3.2.4]

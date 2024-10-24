@@ -27,7 +27,7 @@ The pseudocode below should help you get started in creating your own trading bo
 .. code-block:: python3
 
     # Import packages.
-    from tradingview_ta import TA_Handler, Interval, Exchange
+    from tradingview_ta_v3 import TA_Handler, Interval, Exchange
     import time
 
     # Store the last order.
@@ -69,16 +69,16 @@ The pseudocode below should help you get started in creating your own trading bo
 How can I get involved?
 -----------------------
 
-If you found a bug, please `create an issue <https://github.com/brian-the-dev/python-tradingview-ta/issues>`_ on the GitHub repository.
+If you found a bug, please `create an issue <https://github.com/nazguul512/python-tradingview-ta-v3/issues>`_ on the GitHub repository.
 
-You can contribute (new features, bug fix, typo, etc) through the `GitHub repository <https://github.com/brian-the-dev/python-tradingview-ta>`_. Please follow the `guidelines <https://github.com/brian-the-dev/python-tradingview-ta/blob/main/CONTRIBUTING.md>`_ and don't send spammy pull requests.
+You can contribute (new features, bug fix, typo, etc) through the `GitHub repository <https://github.com/nazguul512/python-tradingview-ta-v3>`_. Please follow the `guidelines <https://github.com/nazguul512/python-tradingview-ta-v3/blob/main/CONTRIBUTING.md>`_ and don't send spammy pull requests.
 
 How does TradingView_TA works?
 ------------------------------
 
 A simple network inspection on TradingView's website revealed that the data is retrieved through an `undocumented API <https://scanner.tradingview.com/america/scan>`_.
 
-TradingView_TA works by calculating similar data using `algorithms <https://github.com/brian-the-dev/python-tradingview-ta/blob/main/tradingview_ta/technicals.py>`_ reverse-engineered from their `JavaScript code <https://gist.github.com/brian-the-dev/f0bb91658c1f161cafe8990db1473bd6>`_.
+TradingView_TA works by calculating similar data using `algorithms <https://github.com/nazguul512/python-tradingview-ta-v3/blob/main/tradingview_ta/technicals.py>`_ reverse-engineered from their `JavaScript code`_.
 
 Why do I get 4XX error?
 -----------------------
